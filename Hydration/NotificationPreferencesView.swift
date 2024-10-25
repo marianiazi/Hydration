@@ -75,13 +75,13 @@ struct NotificationPreferencesView: View {
                             HStack(spacing: 2) {
                                 Text(parts[0])  // The number part (e.g., 15)
                                     .font(.headline)
-                                    .foregroundColor(selectedInterval == interval ? .white : .blue2)
+                                    .foregroundColor(selectedInterval == interval ? .white : .cyan)
                                 Text(parts[1])  // The unit part (e.g., Mins)
                                     .font(.subheadline)
                                     .foregroundColor(selectedInterval == interval ? .white : .gray)
                             }
                             .frame(width: 90, height: 44)
-                            .background(selectedInterval == interval ? Color.blue2 : Color(.systemGray6))
+                            .background(selectedInterval == interval ? Color.cyan : Color(.systemGray6))
                             .cornerRadius(10)
                         }
                     }
@@ -99,7 +99,7 @@ struct NotificationPreferencesView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
-                    .background(Color.blue2)
+                    .background(Color.cyan)
                     .cornerRadius(10)
                     .padding(.horizontal, 40)
             }
